@@ -3835,9 +3835,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bubulo Acerbus 14724
 -- Melnan Darkstone 14842
 -- Lylandris 14982
--- League of Arathor Emissary 14991
--- Silverwing Emissary 15102
--- Stormpike Emissary 15103
+-- League of Arathor Emissary
+('1499101','14991','1','0','100','1','10000','90000','20000','70000','10','11','18','0','0','0','0','0','0','0','0','0','League of Arathor Emissary - Random Laugh or Cry Emote'),
+('1499102','14991','1','0','100','1','5000','25000','10000','30000','5','1','0','0','0','0','0','0','0','0','0','0','League of Arathor Emissary - Talk Emote OOC'),
+-- Silverwing Emissary
+('1510201','15102','1','0','100','1','10000','90000','20000','70000','10','11','18','0','0','0','0','0','0','0','0','0','Silverwing Emissary - Random Laugh or Cry Emote'),
+('1510202','15102','1','0','100','1','5000','25000','10000','30000','5','1','0','0','0','0','0','0','0','0','0','0','Silverwing Emissary - Talk Emote OOC'),
+-- Stormpike Emissary
+('1510301','15103','1','0','100','1','10000','90000','20000','70000','10','11','18','0','0','0','0','0','0','0','0','0','Stormpike Emissary - Random Laugh or Cry Emote'),
+('1510302','15103','1','0','100','1','5000','25000','10000','30000','5','1','0','0','0','0','0','0','0','0','0','0','Stormpike Emissary - Talk Emote OOC'),
 -- Barrus 15119
 -- Cenarion Emissary Jademoon 15187
 -- Alliance Brigadier General 15351
@@ -6381,10 +6387,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('152701','1527','9','0','100','1','0','5','9000','15000','11','3234','1','0','0','0','0','0','0','0','0','0','Hungering Dead - Cast Disease Touch'),
 -- Shambling Horror
 ('152801','1528','9','0','100','1','0','5','9000','15000','11','3234','1','0','0','0','0','0','0','0','0','0','Shambling Horror - Cast Disease Touch'),
--- Bleeding Horror
-('152901','1529','8','0','35','1','0','-1','0','0','11','3322','6','0','0','0','0','0','0','0','0','0','Bleeding Horror - Cast Rancid Blood on Spellhit'),
--- Rotting Ancestor
-('153001','1530','8','0','35','1','0','-1','0','0','11','3322','6','0','0','0','0','0','0','0','0','0','Rotting Ancestor - Cast Rancid Blood on Spellhit'),
+-- Bleeding Horror (1529) - NSR
+-- Rotting Ancestor (1530) - NSR
 -- Lost Soil
 ('153101','1531','9','0','100','1','0','8','12000','21000','11','7713','0','0','0','0','0','0','0','0','0','0','Lost Soil - Cast Wailing Dead'),
 -- Wandering Spirit
@@ -12571,10 +12575,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vehena 14727
 -- Kruban Darkblade 14843
 -- Kartra Bloodsnarl 14942
--- Defilers Emissary 14990
+-- Defilers Emissary
+('1499001','14990','1','0','100','1','10000','90000','20000','70000','10','11','18','0','0','0','0','0','0','0','0','0','Defilers Emissary - Random Laugh or Cry Emote'),
+('1499002','14990','1','0','100','1','5000','25000','10000','30000','5','1','0','0','0','0','0','0','0','0','0','0','Defilers Emissary - Talk Emote OOC'),
 -- Deze Snowbane 15006
--- Warsong Emissary 15105
--- Frostwolf Emissary 15106
+-- Warsong Emissary
+('1510501','15105','1','0','100','1','10000','90000','20000','70000','10','11','18','0','0','0','0','0','0','0','0','0','Warsong Emissary - Random Laugh or Cry Emote'),
+('1510502','15105','1','0','100','1','5000','25000','10000','30000','5','1','0','0','0','0','0','0','0','0','0','0','Warsong Emissary - Talk Emote OOC'),
+-- Frostwolf Emissary
+('1510601','15106','1','0','100','1','10000','90000','20000','70000','10','11','18','0','0','0','0','0','0','0','0','0','Frostwolf Emissary - Random Laugh or Cry Emote'),
+('1510602','15106','1','0','100','1','5000','25000','10000','30000','5','1','0','0','0','0','0','0','0','0','0','0','Frostwolf Emissary - Talk Emote OOC'),
 -- Grinkle 15116
 -- Cenarion Emissary Blackhoof 15188
 -- Spoops 15309
@@ -15517,8 +15527,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('890705','8907','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Wrath Hammer Construct - Enable Dynamic Movement at 9-80 Yards'),
 ('890706','8907','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Wrath Hammer Construct - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('890707','8907','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Wrath Hammer Construct - Set Melee Weapon Model on Evade'),
--- Molten War Golem
-('890801','8908','0','0','100','1','9000','11000','11000','18000','11','15570','4','33','0','0','0','0','0','0','0','0','Molten War Golem - Cast Immolate'),
+-- Molten War Golem (8908) - NSR
 -- Fireguard
 ('890901','8909','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Fireguard - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('890902','8909','9','5','100','1','0','40','3600','4900','11','14034','1','0','0','0','0','0','0','0','0','0','Fireguard - Cast Fireball (Phase 1)'),
@@ -16188,7 +16197,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Halycon (SD2 Backport)
 ('1022001','10220','11','0','100','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Halycon - Cast Thrash on Spawn'),
 ('1022002','10220','0','0','100','1','8000','10000','12000','14000','11','13738','1','0','0','0','0','0','0','0','0','0','Halycon - Cast Rend'),
-('1022003','10220','6','0','100','0','0','0','0','0','32','10268','0','20','0','0','0','0','0','0','0','0','Halycon - Summon Gizrul the Slavener on Death'),
+('1022003','10220','6','0','100','0','0','0','0','0','1','-818','0','0','32','10268','0','20','0','0','0','0','Halycon - Say and Summon Gizrul the Slavener on Death'),
 -- Rookery Guardian
 ('1025801','10258','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Rookery Guardian - Set Phase 1 on Aggro'),
 ('1025802','10258','9','5','100','1','0','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Rookery Guardian - Cast Sunder Armor (Phase 1)'),
@@ -19612,8 +19621,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1166407','11664','9','0','100','1','0','8','11000','14000','11','20229','0','1','0','0','0','0','0','0','0','0','Flamewaker Elite - Cast Blast Wave'),
 ('1166408','11664','0','0','100','1','9000','11000','9000','12000','11','20623','4','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Cast Fire Blast'),
 ('1166409','11664','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Set Phase to 0 on Evade'),
--- Lava Annihilator
-('1166501','11665','11','0','100','0','0','0','0','0','11','19194','0','2','11','19195','0','2','0','0','0','0','Annihilator - Double Attack + Hate to 90%'),
+-- Lava Annihilator (11665) - NSR
 -- Firewalker
 ('1166601','11666','0','0','100','1','7000','11000','8000','15000','11','19635','0','0','0','0','0','0','0','0','0','0','Firewalker - Cast Incite Flames'),
 ('1166602','11666','0','0','100','1','5000','8000','12000','17000','11','19636','0','1','0','0','0','0','0','0','0','0','Firewalker - Cast Fire Blossom'),
@@ -19951,7 +19959,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hive'Zara Swarmer (15546) - NSR
 -- Hive'Zara Larva (15555) - NSR
 -- Hive'Zara Hornet (15934) - NSR
--- Buru Egg Trigger (UNKNOWN IF THIS IS CORRECT IMPLIMENTATION OR NOT)
+-- Buru Egg Trigger
 ('1596401','15964','11','0','100','0','0','0','0','0','11','26646','0','0','0','0','0','0','0','0','0','0','Buru Egg Trigger - Cast Buru Egg Trigger Effect on Spawn'),
 
 
@@ -19964,12 +19972,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1522901','15229','4','0','100','0','0','0','0','0','11','25152','0','1','0','0','0','0','0','0','0','0','Vekniss Soldier - Cast Agro Drones on Aggro'),
 ('1522902','15229','0','0','100','1','1000','3000','15000','21000','11','1906','4','1','0','0','0','0','0','0','0','0','Vekniss Soldier - Cast Debilitating Charge'),
 ('1522903','15229','9','0','100','1','0','5','5000','7000','11','15584','4','0','0','0','0','0','0','0','0','0','Vekniss Soldier - Cast Cleave'),
-('1522904','15229','6','0','100','0','0','0','0','0','11','25801','0','7','0','0','0','0','0','0','0','0','Vekniss Soldier - Cast Frenzy Aura on Death'),
 -- Vekniss Warrior
 ('1523001','15230','6','0','100','0','0','0','0','0','11','6122','0','7','0','0','0','0','0','0','0','0','Vekniss Warrior - Summon Vekniss Borer on Death'),
 -- Vekniss Guardian
-('1523301','15233','9','0','100','1','0','10','8000','11000','11','26025','0','0','0','0','0','0','0','0','0','0','Vekniss Guardian - Cast Impale'),
-('1523302','15233','2','0','100','0','20','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Vekniss Guardian - Cast Enrage at 20% HP'),
+('1523301','15233','4','0','50','0','0','0','0','0','1','-1551','0','0','0','0','0','0','0','0','0','0','Vekniss Guardian - Emote on Aggro'),
+('1523302','15233','9','0','100','1','0','10','8000','11000','11','26025','0','0','0','0','0','0','0','0','0','0','Vekniss Guardian - Cast Impale'),
+('1523303','15233','2','0','100','0','20','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Vekniss Guardian - Cast Enrage at 20% HP'),
 -- Vekniss Stinger (15235) - NSR
 -- Vekniss Wasp
 ('1523601','15236','9','0','100','1','0','40','9000','12000','11','26077','4','0','0','0','0','0','0','0','0','0','Vekniss Wasp - Cast Itch'),
@@ -21737,7 +21745,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-815','This... is an unrecoverable... loss.','14507','1','0','29266','0'),
 ('-816','Never underestimate the other ethereal\'s greed.','0','0','0','19666','0'),
 ('-817','So or\'manley fi siame Dim fus siame yudo','5859','1','14','8580','0'),
--- PLEASE RE-USE -818
+('-818','%s lets loose a guttural growl as her body collapses. A horrifying howl can be heard echoing through the halls of Blackrock Spire. Something is very, very angry.','0','2','0','10220','0'),
 ('-819','Turn back! Do not wake the dreamer!','5866','1','0','5721','0'),
 ('-820','You know not what you do! We must destroy you for your own good.','0','1','0','5721','0'),
 ('-821','Mother, oh mother. You should have listened to me...','0','0','0','1657','0'),
@@ -22180,7 +22188,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1537','My lord will be outraged to learn of this ambush. Let us hope your death will appease him.','0','0','0','Crimson Templar','0'),
 ('-1538','The Abyssal Council does not tolerate deceit! Feel our wrath, little $r!','0','0','0','Crimson Templar','0'),
 ('-1539','Your life is a fitting sacrifice for my master, $c.','0','0','0','Crimson Templar','0'),
-('-1540','Leaping leper gnomes! I\'ve been stuck in there for months. Thanks, gang.','0','0','0','10776','0');
+('-1540','Leaping leper gnomes! I\'ve been stuck in there for months. Thanks, gang.','0','0','0','10776','0'),
+('-1551','%s emits a strange noise.','0','2','0','15233 16168','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
@@ -22201,7 +22210,7 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 ('13','1824.58','747.281','21.1486','3.70162','18000000','8138'),
 ('14','1796.56','758.122','14.7124','5.03836','18000000','8138'),
 ('15','1783.90','745.005','16.1110','6.03896','18000000','8138'),
-('20','-169.839203','-324.961395','64.401443','3.124724','300000','10268'),
+('20','-167.538','-415.014','76.1469','1.56698','10800000','10268'),
 ('21','28.067','61.875','-123.405','4.67','600000','12238'),
 ('22','726.106','77.9764','-86.5913','6.00393','18000000','13716'),
 ('29','-16.8468','-454.377','-18.6442','2.91211','7200000','16080'),
