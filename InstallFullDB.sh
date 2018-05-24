@@ -7,8 +7,8 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE="ClassicDB_1_8_5_z2697.sql"
-DB_TITLE="v1.8.5 'Below Blackrock Mountain'"
+FULLDB_FILE="ClassicDB_1_9_0_z2717.sql"
+DB_TITLE="v1.9.0 'The Black Dragonflight'"
 NEXT_MILESTONES="0.19 0.20"
 
 #internal use
@@ -68,6 +68,9 @@ CORE_PATH=""
 ## Define your mysql programm if this differs
 MYSQL="mysql"
 
+## Define if you want to wait a bit before applying the full database
+FORCE_WAIT="YES"
+
 ## Define if the 'dev' directory for processing development SQL files needs to be used
 ##   Set the variable to "YES" to use the dev directory
 DEV_UPDATES="NO"
@@ -109,7 +112,7 @@ then
   echo "Please bring your repositories up-to-date!"
   echo "Press CTRL+C to exit"
   # show a mini progress bar
-  for i in {1..19}
+  for i in {1..10}
   do
    echo -ne .
    sleep 1
